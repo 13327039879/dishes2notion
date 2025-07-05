@@ -1,0 +1,5 @@
+requests
+beautifulsoup4
+notion-client
+#selenium
+#webdriver-manager
