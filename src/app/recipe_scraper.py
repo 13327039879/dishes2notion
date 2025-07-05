@@ -1,3 +1,4 @@
+"""This module scrapes recipe data from xiachufang.com."""
 import json
 import os
 import requests
@@ -9,6 +10,7 @@ from config.settings import URLS, SCRAPED_PATH, RECIPES_DIR, IMAGES_DIR, CATEGOR
 
 
 def fetch_recipe(url):
+    """Fetch a single recipe from a URL."""
     headers = {
         "User-Agent": "Mozilla/5.0"
     }
@@ -58,6 +60,7 @@ def fetch_recipe(url):
 
 
 def load_scraped(path):
+    """Load scraped URLs from a file."""
     if not os.path.exists(path):
         return set()
     with open(path, "r", encoding="utf-8") as f:
@@ -65,12 +68,14 @@ def load_scraped(path):
 
 
 def append_scraped(name, url, path):
+    """Append a scraped URL to a file."""
     with open(path, "a", encoding="utf-8") as f:
         f.write(name + "\n")
         f.write(url + "\n")
 
 
 def save_recipe_as_json(data, output_dir):
+    """Save a recipe as a JSON file."""
     os.makedirs(output_dir, exist_ok=True)
     filename = safe_filename(data['菜名']) + ".json"
     filepath = os.path.join(output_dir, filename)

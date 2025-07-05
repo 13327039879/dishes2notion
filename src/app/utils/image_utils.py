@@ -1,3 +1,4 @@
+"""Image utility functions."""
 import os
 import re
 
@@ -5,10 +6,12 @@ import requests
 
 
 def safe_filename(name):
+    """Sanitize a string to be used as a filename."""
     return re.sub(r'[\\/:*?"<>|]', "_", name)
 
 
 def download_image(image_url, name, image_dir):
+    """Download an image from a URL and save it to a directory."""
     if not image_url or image_url.startswith("（无图片）"):
         print("⚠️ 无主图，跳过下载")
         return
