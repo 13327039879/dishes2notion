@@ -1,3 +1,6 @@
+[MAIN]
+fail-under=9.0
+
 [MASTER]
 # 可递归检查的路径（默认 '.')
 init-hook='import sys; sys.path.append(".")'
