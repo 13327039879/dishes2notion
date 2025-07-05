@@ -19,9 +19,8 @@ https://www.notion.so/226ffb188c6d801f8b1ee2b714b273e9?v=226ffb188c6d81b6bc29000
 ![备菜.png](readme_pictures%2F%E5%A4%87%E8%8F%9C.png)
 
 ## 使用方法
-1. 开发调试环境基于 Python 3.12.3 环境。其他 Python 版本未经过任何测试。
-2. 清空 `src/toolings/dish_names.txt` 文件，输入菜名，每行一个。
-3. 运行 `python src/toolings/xiachufang_search.py`。
+1. 清空 `src/toolings/dish_names.txt` 文件，输入菜名，每行一个。
+2. 运行 `python src/toolings/xiachufang_search.py`。
 
 ## 运行过程
 1. 读取 `src/toolings/dish_names.txt` 文件中的菜名。
@@ -34,4 +33,5 @@ https://www.notion.so/226ffb188c6d801f8b1ee2b714b273e9?v=226ffb188c6d81b6bc29000
 8. 查看 notion 中的新增内容。
 
 ## 注意事项
-1. 由于“下厨房”有建议的防爬策略，失败后只需重试即可
+1. 开发调试环境基于 Python 3.12.3 环境。其他 Python 版本未经过任何测试。
+2. 由于“下厨房”有简易的防爬策略，失败后只需重试即可
