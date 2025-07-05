@@ -1,0 +1,47 @@
+[MASTER]
+# 可递归检查的路径（默认 '.')
+init-hook='import sys; sys.path.append(".")'
+jobs=1
+
+[MESSAGES CONTROL]
+# 禁用部分不必要或太严格的规则
+disable=
+    C0114,  # missing-module-docstring
+    C0115,  # missing-class-docstring
+    C0116,  # missing-function-docstring
+    R0903,  # too-few-public-methods
+    R0913,  # too-many-arguments
+    R0914,  # too-many-locals
+    R0915,  # too-many-statements
+    W0511,  # fixme (允许 TODO / FIXME 存在)
+    C0103,  # invalid-name (放宽变量命名风格)
+
+[FORMAT]
+max-line-length=100
+indent-string='    '
+
+[BASIC]
+good-names=i,j,k,ex,Run,_,id,db
+variable-rgx=[a-z_][a-z0-9_]{1,30}$
+
+[TYPECHECK]
+ignored-modules=flask,numpy,pandas
+# ↑ 如果你项目中用到外部库但不想报 "no-member"，可加在这里
+
+[REPORTS]
+output-format=colorized
+reports=no
+
+[LOGGING]
+logging-modules=logging
+
+[DESIGN]
+max-args=6
+max-locals=15
+max-returns=6
+max-branches=12
+max-statements=50
+max-parents=7
+max-attributes=10
+min-public-methods=0
+max-public-methods=20
