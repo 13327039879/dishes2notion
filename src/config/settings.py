@@ -11,8 +11,8 @@ IMAGES_DIR = os.path.join(BASE_DIR, "images")
 
 URLS = URL_DICT.values()
 
-NOTION_TOKEN = "<YOUR-NOTION-TOKEN>"
-DATABASE_ID = "<YOUR-NOTION-DATABASE-ID>"
+NOTION_TOKEN = os.getenv("NOTION_TOKEN")
+DATABASE_ID = os.getenv("NOTION_DATABASE_ID")
 
 CATEGORY_RULES = {
     "荤菜": ["鸡", "鸭", "牛", "猪", "肉", "虾", "蟹", "排骨", "鱼", "培根", "腊肠", "三文鱼", "鱿鱼"],
