@@ -2,6 +2,22 @@
 
 https://www.notion.so/226ffb188c6d801f8b1ee2b714b273e9?v=226ffb188c6d81b6bc29000c397f1d1a&source=copy_link
 
+## Notion Note 示例
+### 菜单
+![菜单.png](readme_pictures%2F%E8%8F%9C%E5%8D%95.png)
+
+### 分类
+![分类.png](readme_pictures%2F%E5%88%86%E7%B1%BB.png)
+
+### 清单
+![清单.png](readme_pictures%2F%E6%B8%85%E5%8D%95.png)
+
+### 计划
+![计划.png](readme_pictures%2F%E8%AE%A1%E5%88%92.png)
+
+### 备菜
+![备菜.png](readme_pictures%2F%E5%A4%87%E8%8F%9C.png)
+
 ## 使用方法
 1. 清空 `src/toolings/dish_names.txt` 文件，输入菜名，每行一个。
 2. 运行 `python src/toolings/xiachufang_search.py`。
