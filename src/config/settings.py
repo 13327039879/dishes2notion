@@ -1,8 +1,9 @@
+"""Settings for the recipe scraper project."""
 import os
 
 from config.dishes_settings import URL_DICT
 
-# 设置 scraped.txt 的路径
+# set up base directories and paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCRAPED_PATH = os.path.join(BASE_DIR, "db", "scraped.txt")
 os.makedirs(os.path.join(BASE_DIR, "db"), exist_ok=True)
