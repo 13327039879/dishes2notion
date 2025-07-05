@@ -1,3 +1,4 @@
+"""Search for recipe links on 下厨房 (xiachufang.com) based on dish names."""
 import os
 import time
 
