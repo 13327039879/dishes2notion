@@ -42,8 +42,5 @@ if __name__ == '__main__':
             print(f"# ❌ 未找到：{name}")
         time.sleep(1)  # 防止请求过快被封
 
-    # 输出为 Python dict 格式
-    print("\nURL_DICT = {")
     for name, link in url_dict.items():
-        print(f'    "{name.strip()}": "{link}",')
-    print("}")
+        print(f'"{name.strip()}": "{link}",')
