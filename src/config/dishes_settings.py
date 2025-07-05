@@ -1,3 +1,5 @@
+"""Settings for the recipe scraper project."""
+
 URL_DICT = {
     "西红柿炒鸡蛋": "https://www.xiachufang.com/recipe/106488658/",
     "青椒肉丝": "https://www.xiachufang.com/recipe/107212374/",
