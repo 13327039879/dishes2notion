@@ -8,11 +8,13 @@ from config import settings
 
 
 def get_dish_names():
+    """Read dish names from a text file."""
     with open(os.path.join(settings.BASE_DIR, "toolings", "dish_names.txt"), "r") as f:
         return f.readlines()
 
 
 def search_recipe_link(dish_name):
+    """Search for a recipe link on 下厨房 based on the dish name."""
     search_url = f"https://www.xiachufang.com/search/?keyword={requests.utils.quote(dish_name)}"
     headers = {
         "User-Agent": "Mozilla/5.0"
@@ -31,7 +33,7 @@ def search_recipe_link(dish_name):
 
 
 if __name__ == '__main__':
-    # 主逻辑
+    # main process
     url_dict = {}
     for name in get_dish_names():
         url = search_recipe_link(name)
